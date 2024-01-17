@@ -14,7 +14,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { QueryClient, QueryClientProvider } from "react-query";
 import Register from "./pages/Register";
 import { UserContextProvider } from "./context/AuthContext";
-import Auth from "./pages/Auth";
+// import Auth from "./pages/Auth";
 import Erorr from "./pages/Erorr";
 
 
@@ -32,16 +32,16 @@ function App() {
        <SideBar/>
        <div className={sideBarShouldBeHidden ? "grow" : "grow mr-56 max-lg:mr-0"}>
        <Routes>
-       <Route path="/dashboard" element={<Auth><Home/></Auth>}/>
+       <Route path="/dashboard" element={<Home/>}/>
        <Route path="/" element={<Login/>}/>
        <Route path="/register" element={<Register/>}/>
-       <Route path="/products" element={<Auth><Produts/></Auth>}/>
-       <Route path="/products/add" element={<Auth><AddProduct/></Auth>}/>
-       <Route path="/products/edit/:id" element={<Auth><EditProduct/></Auth>}/>
-       <Route path="/addCategory" element={<Auth><AddCategory/></Auth>}/>
-       <Route path="/editCategory/:id" element={<Auth><EditCategory/></Auth>}/>
-       <Route path="/users" element={<Auth><Users/></Auth>} />
-       <Route path="/orders" element={<Auth><Orders/></Auth>}/>
+       <Route path="/products" element={<Produts/>}/>
+       <Route path="/products/add" element={<AddProduct/>}/>
+       <Route path="/products/edit/:id" element={<EditProduct/>}/>
+       <Route path="/addCategory" element={<AddCategory/>}/>
+       <Route path="/editCategory/:id" element={<EditCategory/>}/>
+       <Route path="/users" element={<Users/>} />
+       <Route path="/orders" element={<Orders/>}/>
        <Route path="*" element={<Erorr/>} />
        </Routes>
        </div>
