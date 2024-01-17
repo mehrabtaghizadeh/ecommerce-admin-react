@@ -102,7 +102,7 @@ export default function UserChart() {
   return (
     <>
       <div className="grid grid-cols-3 p-2 max-md:grid-cols-2 max-sm:grid-cols-1 mt-6 gap-6">
-        <div className="flex flex-col h-28 gap-4 bottom-0 justify-center items-center">
+        <div className="flex flex-col h-28 gap-4 bottom-0 justify-center items-center max-md:m-6">
           <div className="text-mainblack border-b-1 border-gary flex flex-col justify-center items-center w-40 max-sm:w-32">
             <p className="mb-3">{totalUsers}</p>
             <div className="h-20 flex items-end">
@@ -128,7 +128,7 @@ export default function UserChart() {
           </p>
         </div>
         <div>
-          <div className="flex flex-col h-28 gap-4 bottom-0 justify-center items-center">
+          <div className="flex flex-col h-28 gap-4 bottom-0 justify-center items-center max-md:m-6">
             <div className="text-mainblack border-b-1 border-gary flex flex-col justify-center items-center w-40 max-sm:w-32">
               <p className="mb-3">{registrationsThisMonth}</p>
               <div className="h-20 flex items-end">
@@ -154,7 +154,7 @@ export default function UserChart() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col h-28 gap-4 bottom-0 justify-center items-center">
+        <div className="flex flex-col h-28 gap-4 bottom-0 justify-center items-center max-md:m-6">
           <div className=" text-mainblack border-b-1 border-gary flex flex-col justify-center items-center w-40 max-sm:w-32">
             <p className="mb-3">{registrationsToday}</p>
             <div className="h-20 flex items-end">
