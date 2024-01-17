@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  /* color: #002b6c; */
+}
+
+input {
+  @apply px-8 py-3 rounded bg-skyblue text-blue transition-all outline-none;
+}
+input:is(:hover,:focus) {
+  @apply border-none outline-none;
+}
+
+textarea {
+  @apply px-8 py-3 rounded bg-skyblue text-blue border-none transition-all outline-none;
+}
+.side-hidden{
+  display: none;
+}
