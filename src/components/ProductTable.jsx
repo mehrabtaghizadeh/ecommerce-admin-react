@@ -82,7 +82,7 @@ function ProductTable() {
               <td className="px-6 py-4 max-lg:hidden">
                 {product.category?.name}
               </td>
-              <td className="px-6 py-4 max-sm:hidden">{product?.price}</td>
+              <td className="px-6 py-4 max-sm:hidden">{product?.price.toLocaleString()}</td>
               <td className="px-6 py-4 max-sm:px-4">
                 <div className="flex items-center justify-center gap-5 max-sm:gap-3 ">
                   <Link to={`/products/edit/${product._id}`}>
